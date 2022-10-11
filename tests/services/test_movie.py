@@ -11,7 +11,7 @@ from service.movie import MovieService
 def movie_dao():
     movie_dao = MovieDAO(None)
 
-    film_1 = Movie(id=1, title="pypykaka", description="vot tyt to i nachalas zavarushka",
+    film_1 = Movie(id=1, title="pypy", description="vot tyt to i nachalas zavarushka",
                    trailer="ssilka", rating=2.1, genre_id=1, director_id=1)
     film_2 = Movie(id=2, title="Синяки в Огайо", description="Заходят два синяка в бар, а бармен их спрашивает...",
                    trailer="ssilka1", year=2002, rating=5.1, genre_id=1, director_id=1)
@@ -63,6 +63,6 @@ class TestMovieService:
         self.movie_service.update(movie_t)
 
     def test_delete(self):
-        movie = self.movie_service.delete(1)
+        self.movie_service.delete(1)
 
 
