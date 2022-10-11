@@ -41,8 +41,7 @@ class TestGenreService:
 
     def test_create(self):
         genre_t = {
-            "title": "Shisha",
-            "description": "fifififif",
+            "name": "Shisha",
         }
 
         genre = self.genre_service.create(genre_t)
@@ -52,8 +51,7 @@ class TestGenreService:
     def test_update(self):
         genre_t = {
             "id": 1,
-            "title": "Shisha",
-            "description": "fifififif",
+            "name": "Shisha",
         }
 
         self.genre_service.update(genre_t)
